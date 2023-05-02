@@ -1,0 +1,6 @@
+com/example/App.class
+com/example/datamodel/TodoItem.class
+module-info.class
+com/example/datamodel/TodoData.class
+com/example/PrimaryController$1.class
+com/example/PrimaryController.class
