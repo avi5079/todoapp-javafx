@@ -7,6 +7,7 @@ import java.util.List;
 
 import java.util.ArrayList;
 
+import com.example.datamodel.TodoData;
 import com.example.datamodel.TodoItem;
 
 import javafx.beans.value.ChangeListener;
@@ -57,6 +58,8 @@ public class PrimaryController {
                 todoItems.add(item3);
                 todoItems.add(item4);
                 todoItems.add(item5);
+
+                TodoData.getInstance().setTodoItems(todoItems);
 
                 todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TodoItem>() {
                         @Override
