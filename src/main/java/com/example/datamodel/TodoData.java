@@ -38,9 +38,13 @@ public class TodoData {
     /**
      * @param todoItems the todoItems to set
      */
-    public void setTodoItems(List<TodoItem> todoItems) {
-        this.todoItems = todoItems;
-    }
+    // public void setTodoItems(List<TodoItem> todoItems) {
+    // this.todoItems = todoItems;
+    // }
+
+    // don't need this method anymore as it was just to store the hard coded values
+    // in singleton instance
+    // data gets stored in a file after the application closes in the stop() method
 
     public void loadTodoItem() throws IOException {
         todoItems = FXCollections.observableArrayList();
